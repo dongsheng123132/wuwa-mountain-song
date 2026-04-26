@@ -2,7 +2,9 @@
 
 > 一首参考景颇族《目瑙纵歌》、植根于湖南隆回花瑶呜哇山歌、融合全球爆款迎宾曲公式的原创迎宾合唱。
 
-[![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC_BY--SA_4.0-lightgrey.svg)](LICENSE)
+[![License: All Rights Reserved](https://img.shields.io/badge/License-All_Rights_Reserved-red.svg)](LICENSE) [![Status](https://img.shields.io/badge/Status-WIP-yellow.svg)](#制作路线图)
+
+**© 2026 贺去病AI工作室 (Hequbing AI Studio) · 版权所有 · All Rights Reserved**
 
 ---
 
@@ -21,9 +23,14 @@
 
 ## 试听
 
-- [ ] `audio/demo-v1.mp3` — Suno AI 生成的 demo（待生成）
-- [ ] `audio/full-3min.mp3` — 真人录唱正式版（待录制）
-- [ ] `audio/short-15s.mp3` — 抖音切片版（待生成）
+| 文件 | 类型 | 状态 |
+|---|---|---|
+| `audio/instrumental-demo.wav` | 自合成纯器乐 demo（Python 合成器） | ✅ 已生成 |
+| `audio/instrumental-demo.mp3` | 同上 MP3 版 | 🟡 看 ffmpeg 状态 |
+| `audio/full-vocal-3min.mp3` | 真人录唱完整版 | ⬜ 待制作 |
+| `audio/short-15s.mp3` | 抖音切片版 | ⬜ 待制作 |
+
+> ⚠ **关于 instrumental-demo**：这是用 Python+numpy 合成的 chiptune 级别器乐 demo，约 66 秒，**不含人声**。仅作为编曲蓝图、节奏参考、给后续真人录唱或 AI 工具提供骨架。重新生成方式见 [`scripts/README.md`](scripts/README.md)。
 
 ---
 
@@ -32,19 +39,23 @@
 ```
 .
 ├── README.md                  本文件
-├── LICENSE                    CC BY-SA 4.0
+├── LICENSE                    All Rights Reserved（保留全部权利）
+├── .gitignore
 ├── docs/
 │   ├── 歌词.md               中文 + 「呜哇」衬词版完整歌词
 │   ├── 简谱.md               主旋律简谱（F 徵调式 BPM 92）
 │   ├── 编曲说明.md            配器/段落/混音方案
 │   ├── 创作笔记.md            爆款公式拆解 + 设计决策
-│   └── suno-prompt.md         Suno AI 生成提示词（直接复制粘贴）
+│   └── suno-prompt.md         Suno AI 生成提示词
 ├── references/
-│   └── 链接清单.md            所有参考曲目的链接
-├── audio/                    （MP3 文件，生成后放这里）
-├── score/                    （MusicXML / MIDI 乐谱，需要时生成）
+│   └── 链接清单.md            参考曲目链接（学习用，不打包音频）
+├── audio/
+│   └── instrumental-demo.wav  自合成纯器乐 demo
+├── scripts/
+│   ├── synthesize.py          器乐 demo 合成器（numpy + wave）
+│   └── README.md              如何重新生成 demo
 └── video/
-    └── dance-tutorial.md     8 拍迎宾舞动作分解
+    └── dance-tutorial.md      8 拍迎宾舞动作分解
 ```
 
 ---
@@ -67,10 +78,13 @@ Jerusalema、Waka Waka 这些全球爆款迎宾曲背后有一套通用公式：
 
 ---
 
-## 快速使用
+## 快速试听 / 上手
 
-### 1. 听一遍歌词
-打开 [`docs/歌词.md`](docs/歌词.md)，朗读副歌：
+### 1. 听 demo
+直接双击 `audio/instrumental-demo.wav`（Windows Media Player / VLC / 浏览器都能播放）。
+
+### 2. 看歌词
+打开 [`docs/歌词.md`](docs/歌词.md)，朗读副歌核心 hook：
 
 ```
 呜——哇——呜哇呜哇呜——
@@ -79,43 +93,53 @@ Jerusalema、Waka Waka 这些全球爆款迎宾曲背后有一套通用公式：
 山再高 路再长 不挡咱情长
 ```
 
-### 2. 生成 demo MP3（路线 A：Suno AI 最快）
-1. 打开 [https://suno.com](https://suno.com)
-2. 复制 [`docs/suno-prompt.md`](docs/suno-prompt.md) 中的风格提示词和歌词
-3. 生成、下载 MP3，保存到 `audio/demo-v1.mp3`
+### 3. 重新合成 demo（修改参数）
+修改 `scripts/synthesize.py` 中的 `BPM`、`KEY`、段落配置后：
+```bash
+python scripts/synthesize.py
+```
+覆盖输出 `audio/instrumental-demo.wav`。
 
-### 3. 看简谱（路线 B：MuseScore 离线）
-打开 [`docs/简谱.md`](docs/简谱.md)，按数字简谱用 MuseScore 4 打谱，导出 MIDI/WAV。
-
-### 4. 学迎宾舞
-打开 [`video/dance-tutorial.md`](video/dance-tutorial.md)，跟着 8 拍动作分解学。
+### 4. 制作真人/AI 完整版
+- **AI 路线**：用 [`docs/suno-prompt.md`](docs/suno-prompt.md) 中的提示词在 Suno/Udio/Mureka 上生成
+- **真人路线**：把 `instrumental-demo.wav` 当 click track，邀请花瑶歌手或专业唱将进棚
 
 ---
 
 ## 制作路线图
 
 - [x] 调研三大参考母本（目瑙纵歌、花瑶呜哇山歌、全球爆款迎宾曲）
-- [x] 写歌词、简谱、编曲说明、舞蹈分解
-- [x] 写 Suno AI 生成提示词
-- [ ] 生成 demo-v1.mp3
-- [ ] 邀请花瑶歌手或专业唱将录制正式版 full-3min.mp3
-- [ ] 制作抖音切片版 short-15s.mp3
+- [x] 写歌词、简谱、编曲说明、8 拍迎宾舞分解
+- [x] 写 Python 合成器 + 生成器乐 demo (instrumental-demo.wav)
+- [ ] 生成 MP3 版本
+- [ ] 真人或 AI 录制带人声完整版
+- [ ] 制作抖音 15 秒切片版
 - [ ] 拍摄迎宾舞教学视频
 - [ ] 联合隆回县文旅局或非遗中心传播
 
 ---
 
-## 授权
+## 授权 · License
 
-本作品采用 **Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)** 协议。
+**本作品保留所有权利 · All Rights Reserved**
 
-- ✅ 你可以**自由使用**、修改、再创作、商用
-- ⚠ 必须**署名**（注明原作者和本仓库链接）
-- ⚠ 修改/再创作版本必须**采用相同协议**（保持开放）
+未经著作权人贺去病AI工作室书面授权，任何人不得复制、发行、表演、广播、改编、商用本作品的全部或任何部分。
 
-详见 [LICENSE](LICENSE)。
+**特别禁止：**
+- ✗ 一切商业使用（演出、广告、影视、品牌、教育收费）
+- ✗ AI 模型训练数据使用
+- ✗ 抄袭、改编后冒充原创
+- ✗ 删除/篡改本声明
 
-> 我们鼓励隆回县文旅、花瑶族群、各类合唱团、文旅活动免费使用本作品。
+完整法律声明见 [LICENSE](LICENSE)。
+
+### 商业授权咨询
+
+需要商演、改编、影视/广告使用、区域代理、品牌联名等授权？请联系：
+
+**贺去病AI工作室 / Hequbing AI Studio**
+- Email: 38004547@qq.com
+- Email: HEFANGSHENG@gmail.com
 
 ---
 
@@ -124,19 +148,7 @@ Jerusalema、Waka Waka 这些全球爆款迎宾曲背后有一套通用公式：
 - **景颇族同胞**：感谢《目瑙纵歌》提供创作灵感与结构参考
 - **花瑶呜哇山歌传承人**：陈治安、奉族群等，致敬千年传承
 - **湖南省隆回县虎形山瑶族乡**：致敬这片孕育花瑶文化的山水
-- **全球音乐工作者**：感谢 Master KG、Shakira、A Tribe Called Red 等用音乐打破文化隔阂
-
----
-
-## 联系与反馈
-
-如果你是：
-- 花瑶歌手/呜哇山歌传承人，愿意参与正式版录制
-- 隆回县文旅/非遗工作者，愿意官方支持
-- 编曲师/制作人，愿意参与编曲
-- 舞蹈编导，愿意优化迎宾舞
-
-请通过 GitHub Issues 或仓库主页联系方式联系。
+- **全球音乐工作者**：Master KG、Shakira、A Tribe Called Red
 
 ---
 
@@ -148,8 +160,9 @@ Jerusalema、Waka Waka 这些全球爆款迎宾曲背后有一套通用公式：
 - [中国非物质文化遗产网](https://www.ihchina.cn) — 目瑙纵歌、花瑶呜哇山歌官方资料
 - 知乎专栏《目瑙纵歌为何全网爆火》
 - The Conversation — Jerusalema 爆火现象研究
-- WARM Music — 全球迎宾曲传播研究
 
 ---
 
 > **创作宣言**：让花瑶的「呜哇」声穿越虎形山，传遍全世界。
+>
+> © 2026 贺去病AI工作室 · 保留全部权利

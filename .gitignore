@@ -1,0 +1,24 @@
+# 临时合成中间产物
+audio/*.tmp.wav
+audio/*.bak
+
+# 便携工具（不进仓）
+scripts/bin/
+
+# 系统文件
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# 编辑器
+.idea/
+.vscode/
+*.swp
+*~
