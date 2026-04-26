@@ -2,9 +2,12 @@
 
 > 一首参考景颇族《目瑙纵歌》、植根于湖南隆回花瑶呜哇山歌、融合全球爆款迎宾曲公式的原创迎宾合唱。
 
-[![License: All Rights Reserved](https://img.shields.io/badge/License-All_Rights_Reserved-red.svg)](LICENSE) [![Status](https://img.shields.io/badge/Status-WIP-yellow.svg)](#制作路线图)
+[![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC_BY--SA_4.0-blue.svg)](LICENSE) [![Status](https://img.shields.io/badge/Status-Open_for_Contribution-brightgreen.svg)](#制作路线图) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-**© 2026 贺去病AI工作室 (Hequbing AI Studio) · 版权所有 · All Rights Reserved**
+**© 2026 贺去病AI工作室 (Hequbing AI Studio) · CC BY-SA 4.0 开源协议**
+
+> 🌸 **欢迎花瑶族群、非遗传承人、音乐工作者、文化研究者参与协作！**
+> 看 [CONTRIBUTING.md](CONTRIBUTING.md) 了解如何贡献。
 
 ---
 
@@ -121,25 +124,28 @@ python scripts/synthesize.py
 
 ## 授权 · License
 
-**本作品保留所有权利 · All Rights Reserved**
+**本作品采用 CC BY-SA 4.0 协议开源**
 
-未经著作权人贺去病AI工作室书面授权，任何人不得复制、发行、表演、广播、改编、商用本作品的全部或任何部分。
+- ✅ 你可以**自由使用**、修改、再创作、**商用**
+- ⚠ 必须**署名**（注明原作者贺去病AI工作室 + 仓库链接）
+- ⚠ 修改/再创作版本必须**采用相同协议**开源（保持开放）
 
-**特别禁止：**
-- ✗ 一切商业使用（演出、广告、影视、品牌、教育收费）
-- ✗ AI 模型训练数据使用
-- ✗ 抄袭、改编后冒充原创
-- ✗ 删除/篡改本声明
+完整协议见 [LICENSE](LICENSE)。
 
-完整法律声明见 [LICENSE](LICENSE)。
+### 协作与联系
 
-### 商业授权咨询
+**🌸 我们诚挚欢迎以下伙伴参与：**
+- 花瑶族群成员、虎形山瑶族乡乡亲
+- 呜哇山歌、花瑶挑花非遗传承人
+- 隆回县文旅局、邵阳市文旅工作者
+- 音乐制作人、编曲师、歌手
+- 文化人类学/音乐学研究者
+- AI 音乐工程师、合成器开发者
 
-需要商演、改编、影视/广告使用、区域代理、品牌联名等授权？请联系：
-
-**贺去病AI工作室 / Hequbing AI Studio**
-- Email: 38004547@qq.com
-- Email: HEFANGSHENG@gmail.com
+**怎么参与：**
+1. **直接 Fork + Pull Request**（修订歌词、改进合成器、添加录唱版本）
+2. **提 GitHub Issue**（指出错误、提供资料、提建议）
+3. **联系工作室**：38004547@qq.com / HEFANGSHENG@gmail.com
 
 ---
 
