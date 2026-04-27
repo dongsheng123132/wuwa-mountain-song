@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📧 商业合作 / 演出授权
+    url: mailto:38004547@qq.com?cc=HEFANGSHENG@gmail.com&subject=《呜哇·迎客来》合作咨询
+    about: 商演、改编、影视/广告使用、文旅 IP 合作
+  - name: 🤝 协作指南
+    url: https://github.com/dongsheng123132/wuwa-mountain-song/blob/master/CONTRIBUTING.md
+    about: 怎么参与本项目协作（中文详解）
+  - name: 🌸 隆回花瑶档案（姊妹仓库）
+    url: https://github.com/dongsheng123132/longhui-huayao-archive
+    about: 花瑶专项资料汇编
+  - name: 🌏 南方少数民族非遗档案（姊妹仓库）
+    url: https://github.com/dongsheng123132/south-china-ethnic-archive
+    about: 19 个民族 × 3 场景 × 30+ 非遗
