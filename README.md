@@ -22,16 +22,24 @@
 
 **目标**：做一首比《目瑙纵歌》更适合传播的隆回花瑶迎宾曲，用音乐让世界听到花瑶。
 
+> 📖 **想知道怎么把这事真的推起来？** 看 [`PLAYBOOK.md`](PLAYBOOK.md)
+> ——90 天执行手册，对齐 2026 年讨僚皈节窗口（2026-06-30 ~ 07-02）。
+
 ---
 
 ## 试听
 
-| 文件 | 类型 | 状态 |
-|---|---|---|
-| `audio/instrumental-demo.wav` | 自合成纯器乐 demo（Python 合成器） | ✅ 已生成 |
-| `audio/instrumental-demo.mp3` | 同上 MP3 版 | 🟡 看 ffmpeg 状态 |
-| `audio/full-vocal-3min.mp3` | 真人录唱完整版 | ⬜ 待制作 |
-| `audio/short-15s.mp3` | 抖音切片版 | ⬜ 待制作 |
+| 文件 | 风格 | 时长 | 状态 |
+|---|---|---|---|
+| `audio/instrumental-demo.wav` | v1 原版 · 民族+电子混合 | ~47s | ✅ 已生成 |
+| `audio/variants/v2-douyin.wav` | v2 抖音 15s 嗨爆版（BPM 128 纯电子） | 18s | ✅ 已生成 |
+| `audio/variants/v3-folk.wav` | v3 纯民族原生版（BPM 78 唢呐+鼓+笛） | 2:30 | ✅ 已生成 |
+| `audio/variants/v4-ballad.wav` | v4 抒情家国情怀版（BPM 72 钢琴+弦乐） | 3:35 | ✅ 已生成 |
+| `audio/variants/v5-duet.wav` | v5 男女对唱故事版（BPM 88 木吉他+中阮） | 4:00 | ✅ 已生成 |
+| `audio/variants/v6-world.wav` | v6 跨语言世界版（BPM 100 Tribal+Synth） | 3:20 | ✅ 已生成 |
+| `audio/full-vocal-3min.mp3` | 真人录唱完整版 | 3:10 | ⬜ 待制作 |
+
+> 📜 6 个版本各自的歌词、Suno 提示词、传播策略见 [`docs/lyrics-variants/`](docs/lyrics-variants/)。
 
 > ⚠ **关于 instrumental-demo**：这是用 Python+numpy 合成的 chiptune 级别器乐 demo，约 66 秒，**不含人声**。仅作为编曲蓝图、节奏参考、给后续真人录唱或 AI 工具提供骨架。重新生成方式见 [`scripts/README.md`](scripts/README.md)。
 
@@ -57,8 +65,18 @@
 ├── scripts/
 │   ├── synthesize.py          器乐 demo 合成器（numpy + wave）
 │   └── README.md              如何重新生成 demo
-└── video/
-    └── dance-tutorial.md      8 拍迎宾舞动作分解
+├── video/
+│   └── dance-tutorial.md      8 拍迎宾舞动作分解
+├── contacts.md                协作邀请联系名单（投递地图）
+├── outreach-letters/          按收件人分别成稿的邀请信
+│   ├── 01-隆回县文旅局.md
+│   ├── 02-虎形山瑶族乡政府.md
+│   ├── 03-高校学术团队.md
+│   ├── 04-花瑶KOL私信.md
+│   └── 05-传承人私信.md
+├── OUTREACH.md                通用邀请信模板与原则
+├── ECOSYSTEM.md               三仓库生态总览
+└── PLAYBOOK.md                ★ 爆款 90 天执行手册（核心战略）
 ```
 
 ---
@@ -146,6 +164,10 @@ python scripts/synthesize.py
 1. **直接 Fork + Pull Request**（修订歌词、改进合成器、添加录唱版本）
 2. **提 GitHub Issue**（指出错误、提供资料、提建议）
 3. **联系工作室**：38004547@qq.com / HEFANGSHENG@gmail.com
+
+**📬 想协助我们邀请相关方？**
+联系名单见 [`contacts.md`](contacts.md)，按渠道分类的邀请信成稿见 [`outreach-letters/`](outreach-letters/)。
+欢迎认领其中一封投递并把回执贴回 issue。
 
 ---
 
