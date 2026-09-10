@@ -38,9 +38,20 @@
 | `audio/variants/v5-duet.wav` | v5 男女对唱故事版（BPM 88 木吉他+中阮） | 4:00 | ✅ 已生成 |
 | `audio/variants/v6-world.wav` | v6 跨语言世界版（BPM 100 Tribal+Synth） | 3:20 | ✅ 已生成 |
 | `audio/full-vocal-3min.mp3` | 真人录唱完整版 | 3:10 | ⬜ 待制作 |
-| `audio/variants/v7-huayao-bloom.mp3` | v7《花瑶花开》群舞版（BPM 124 folk dance-pop） | ~4:30 | ⬜ 待上传 |
+| `audio/variants/v7-huayao-bloom.mp3` | v7《花瑶花开》群舞版（BPM 124 Suno 人声演唱） | 4:23 | ✅ 已生成 |
 
 > 📜 6 个版本各自的歌词、Suno 提示词、传播策略见 [`docs/lyrics-variants/`](docs/lyrics-variants/)。
+
+## v7 样片
+
+| 文件 | 说明 | 时长/规格 | 状态 |
+|---|---|---|---|
+| `video/v7-30s-dynamic.mp4` | v7 30 秒动态样片(阿瑶/阿风动态镜头 + 图片运镜,原曲 00:00–00:30) | 30s / 720×1280 30fps | ✅ 已生成 |
+| `video/v7-30s-photo-cut.mp4` | v7 30 秒照片运镜版(对比用) | 30s / 720×1280 30fps | ✅ 已生成 |
+| `video/v7-shot-ayao-wave.mp4` / `video/v7-shot-afeng-invite.mp4` | 阿瑶挥手 / 阿风邀请 5 秒动态镜头(wan2.2-i2v-flash,各约2元内) | 5s × 2 | ✅ 已生成 |
+| `docs/characters/a-yao.png` / `a-feng.png` | 阿瑶(小沙江花瑶女装,大圆花帽) / 阿风定妆图 | 全身 1:1 | ✅ 已审定 |
+
+v7 歌词、Suno 提示词、30 秒分镜、动态镜头提示词、费用记录见 [`docs/lyrics-variants/v7-huayao-bloom.md`](docs/lyrics-variants/v7-huayao-bloom.md)、[`docs/characters/a-yao.md`](docs/characters/a-yao.md)、[`video/`](video/)。
 
 > ⚠ **关于 instrumental-demo**：这是用 Python+numpy 合成的 chiptune 级别器乐 demo，约 66 秒，**不含人声**。仅作为编曲蓝图、节奏参考、给后续真人录唱或 AI 工具提供骨架。重新生成方式见 [`scripts/README.md`](scripts/README.md)。
 
@@ -67,7 +78,13 @@
 │   ├── synthesize.py          器乐 demo 合成器（numpy + wave）
 │   └── README.md              如何重新生成 demo
 ├── video/
-│   └── dance-tutorial.md      8 拍迎宾舞动作分解
+│   ├── dance-tutorial.md      8 拍迎宾舞动作分解
+│   ├── v7-30s-dynamic.mp4       v7 30 秒动态样片
+│   ├── v7-30s-photo-cut.mp4     v7 30 秒照片运镜版
+│   ├── v7-shot-ayao-wave.mp4 / v7-shot-afeng-invite.mp4  动态镜头
+│   ├── v7-storyboard-actual.md / v7-30s-shots-draft.md  分镜
+│   ├── v7-motion-prompts.txt / v7-cost-record.json  提示词/费用
+│   └── v7-contact-sheet-dynamic.jpg  画面总览
 ├── contacts.md                协作邀请联系名单（投递地图）
 ├── outreach-letters/          按收件人分别成稿的邀请信
 │   ├── 01-隆回县文旅局.md

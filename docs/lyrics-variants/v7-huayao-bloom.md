@@ -153,3 +153,9 @@ High-energy Chinese folk dance-pop inspired by the mountain-festival atmosphere 
 - v7 是**群舞担当**：v2 负责 15 秒洗脑,v7 负责 30 秒–4 分半“能跳起来”的完整体验。
 - v5(对唱故事)给 MV 叙事,v7 给 MV 高潮段落;两者可共用阿瑶/阿风角色库。
 - “花瑶花瑶,花开隆回”与 v1–v6 的“呜哇…迎客来” hook 不同,属**第二记忆点**,A/B 测试时分开看数据,不要混成一首。
+
+## 创作记录
+
+- ChatGPT 方案原文:https://chatgpt.com/share/6aa0ea28-12d8-83ea-aafe-11fbaa031371
+- 制作:阿瑶/阿风定妆图已审定,2 段 5 秒动态镜头(wan2.2-i2v-flash,估算约 2 元,账单未核实),30 秒竖屏样片 720×1280 30fps。
+- 范围:现有成片为歌曲前 30 秒样片,非全曲 4:23 完整 MV。

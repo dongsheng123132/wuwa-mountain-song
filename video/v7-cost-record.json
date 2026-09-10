@@ -1,0 +1,19 @@
+{
+  "budget_cny": 10,
+  "authorized_uploads": [
+    "阿瑶-全身.png",
+    "阿风-全身.png"
+  ],
+  "model": "wan2.2-i2v-flash",
+  "successful_duration_seconds": 10,
+  "unit_price_cny_per_second": 0.2,
+  "estimated_successful_generation_cost_cny": 2,
+  "billing_verified": false,
+  "failed_attempts": 2,
+  "failed_reason": "InvalidParameter: img_url must be set",
+  "notes": "成功任务用量各5秒。失败任务没有usage；此处为成功生成估价，不是已核实账单。未继续提交其他付费任务。",
+  "successful_tasks": [
+    "5a3337e2-53a4-4d67-97c7-c3d901b6f4d0",
+    "000cfe52-dafb-41f5-9fbc-d59957674401"
+  ]
+}
