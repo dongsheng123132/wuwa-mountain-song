@@ -38,6 +38,7 @@
 | `audio/variants/v5-duet.wav` | v5 男女对唱故事版（BPM 88 木吉他+中阮） | 4:00 | ✅ 已生成 |
 | `audio/variants/v6-world.wav` | v6 跨语言世界版（BPM 100 Tribal+Synth） | 3:20 | ✅ 已生成 |
 | `audio/full-vocal-3min.mp3` | 真人录唱完整版 | 3:10 | ⬜ 待制作 |
+| `audio/variants/v7-huayao-bloom.mp3` | v7《花瑶花开》群舞版（BPM 124 folk dance-pop） | ~4:30 | ⬜ 待上传 |
 
 > 📜 6 个版本各自的歌词、Suno 提示词、传播策略见 [`docs/lyrics-variants/`](docs/lyrics-variants/)。
 

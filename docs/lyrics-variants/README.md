@@ -21,7 +21,8 @@
 | **v3** 纯民族原生版 | 唢呐+鼓+人声 | 2:30 | 78 | 文旅/政府/非遗 | 央视/文旅频道 | 文化纯度最高 | `audio/variants/v3-folk.wav` |
 | **v4** 抒情家国情怀版 | 半 Ballad | 3:30 | 72 | 70-90 后情怀党 | 视频号/快手 | 蹭《早安隆回》气质 | `audio/variants/v4-ballad.wav` |
 | **v5** 男女对唱故事版 | 民谣对唱叙事 | 4:00 | 88 | 30-50 文艺中年 | B站/小红书 | 故事感+二创素材 | `audio/variants/v5-duet.wav` |
-| **v6** 跨语言世界版 | 加英文短句副歌 | 3:20 | 100 | 海外华人/民族风国际 | YouTube/Spotify | 对标 Jerusalema | `audio/variants/v6-world.wav` |
+| **v6** 跨语言世界版 | 加英文短句副歌 | 3:20 | 100 |
+| **v7**《花瑶花开》群舞版 | folk dance-pop 群舞 | ~4:30 | 124 | 村寨欢聚/MV/群舞挑战 | 抖音/视频号 | 能跟着唱跳 | `audio/variants/v7-huayao-bloom.mp3`(待上传) | 海外华人/民族风国际 | YouTube/Spotify | 对标 Jerusalema | `audio/variants/v6-world.wav` |
 
 ## 选用决策树
 
